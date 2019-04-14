@@ -18,7 +18,7 @@ async function gatherExtraFiles(globMatcher, entrypoint) {
 
   console.log('gathering extra files for the fs...');
 
-  const entryDir = path.dirname(entrypoint);
+  const entryDir = dirname(entrypoint);
 
   if (Array.isArray(globMatcher)) {
     const allMatches = await Promise.all(
