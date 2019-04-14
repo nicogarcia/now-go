@@ -1,0 +1,27 @@
+{
+  "name": "@now/go",
+  "version": "0.3.1-canary.3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeit/now-builders.git",
+    "directory": "packages/now-go"
+  },
+  "scripts": {
+    "postinstall": "node ./util/install"
+  },
+  "files": [
+    "*.js",
+    "main.go",
+    "main__mod__.go",
+    "util"
+  ],
+  "dependencies": {
+    "debug": "^4.1.1",
+    "execa": "^1.0.0",
+    "fs-extra": "^7.0.0",
+    "mkdirp-promise": "5.0.1",
+    "node-fetch": "^2.2.1",
+    "tar": "4.4.6"
+  }
+}
